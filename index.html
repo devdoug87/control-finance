@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\mystyle.css">
+    <title>Controle Finanças</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Contas do mês</h1>
+    <form class="form-compra">
+        <input type="text" class="campo-produto" placeholder="Conta" maxlength="15">
+        <input type="number" class="campo-valor" placeholder="Valor(R$)" step="0.01" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <ul class="lista-compras"></ul>
+    <h2>
+        Total: R$ <span class="total">0.00</span>
+    </h2>
+    <button class="limpar"> limpar lista</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

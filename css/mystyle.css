@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(104, 104, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 80vw;
+    min-height: 90vh;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 0;
+    
+}
+.form-compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    row-gap: 1rem;
+    padding-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(143, 139, 139, 0.295);
+    padding: 2rem 1rem;
+}
+button[type="submit"] {
+    width: 35%;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(221, 215, 215);
+    transition: background-color 0.2s;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(36, 143, 36);
+    color: white;
+}
+.lista-compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.2rem;
+    
+}
+.lista-compras > li {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.campo-produto, .campo-valor {
+    background-color: gainsboro;
+    width:60%
+    
+}
+.remover-btn {
+    width: 7rem;
+    height:2rem;
+    background-color: rgb(221, 215, 215);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    
+}
+.remover-btn:hover {
+    background-color: rgb(255, 9, 9);
+    color: white;
+}
+h2  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+}
+
+h2, .total {
+    font-size: 1.7rem;
+}
+
+.limpar{
+    width: 9rem;
+    height: 2rem;
+    background-color: rgba(173, 170, 170, 0.466);
+    display: block;
+    margin: 1rem auto;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    
+
+}
+
+.limpar:hover {
+    background-color: red;
+}
+
+@media (min-width: 768px) {
+.container {
+    font-size: 2rem;
+}
+
+ body {
+    background-color: darkcyan;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+}
+button[type="submit"] {
+    width: 20%;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(221, 215, 215);
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(4, 148, 4);
+}
+
+.lista-compras {     /* copiar daqui */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding-bottom: 1rem;
+    
+}
+
+.lista-compras > li {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+}
+.campo-produto, .campo-valor {
+    width:40%;
+    height: 2.4rem;    
+}
+.remover-btn {
+    width: 8rem;
+    height:2rem;
+}
+
+h2  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+h2, .total {
+    font-size: 2.5rem;
+}
+
+.limpar{
+    width: 9.8rem;
+    height: 2.5rem;
+    display: block;
+    margin: 1rem auto;
+} /* ate aqui e colar no @media p telas grandes*/
+
+}
+@media (min-width: 1024px) {
+.container {
+    font-size: 2.9rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+    padding: 3rem;
+}
+
+body {
+    background-color: dimgrey;
+}
+
+button[type="submit"] {
+    background-color: rgb(221, 215, 215);
+    cursor:pointer;
+    transition: background-color 0.2s;
+    width: 20%;
+    height: 3rem;
+
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(65, 138, 65);
+}
+
+
+.lista-compras {     /* copiar daqui */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding-bottom: 1rem;
+    
+}
+
+.lista-compras > li {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
+}
+.campo-produto, .campo-valor {
+    width:40%;
+    height: 2.4rem;    
+}
+.remover-btn {
+    width: 8rem;
+    height:2.5rem;
+}
+
+h2  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+h2, .total {
+    font-size: 3rem;
+}
+
+.limpar{
+    width: 15rem;
+    height: 3rem;
+    display: block;
+    margin: 1rem auto;
+} 
+    
+}
+
+
